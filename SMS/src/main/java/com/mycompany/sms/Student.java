@@ -3,8 +3,7 @@ package com.mycompany.sms;
 
 public class Student {
 
-    public Student(String bN0, String jullian_Maxxi_B_Sabando, byte par, String diploma_in_Information_Technology) {
-    }
+
     String student_num;
     String name;
     byte age;

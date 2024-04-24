@@ -12,7 +12,7 @@ public class SMS {
 
     public static void main(String[] args) {
         
-        Student student = new Student("2022-00282-BN-0", "Jullian Maxxi B. Sabando", (byte) 20, "Diploma in Information Technology");
+        Student student = new Student();
 
         System.out.println("Student number: " + student.getStudent_num());
         System.out.println("Name: " + student.getName());
