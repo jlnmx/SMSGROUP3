@@ -6,8 +6,12 @@ package com.mycompany.sms;
 
 /**
  *
- * @author saban
+ * 
  */
 public class Grades {
     
+       public static void main(String[] args) {
+        // TODO code application logic here
+        new Grades();
+    }
 }
