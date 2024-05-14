@@ -1,3 +1,5 @@
+package com.mycompany.sms;
+
 import java.awt.Font;
 import javax.swing.*;
 
