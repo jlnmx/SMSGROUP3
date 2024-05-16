@@ -1,4 +1,7 @@
- package com.mycompany.sms;
+ 
+//shanepart
+package com.mycompany.sms;
+ 
 
 import javax.swing.*;
 import java.awt.*;
@@ -56,5 +59,116 @@ public class Attendance extends JFrame {
         txtfldCourse.setBounds(120, 160, 150, 20);
         txtfldCourse.setFont(new Font("Arial", Font.PLAIN, 15));
         
+//jamespart
+        
+        btnPresent = new JButton("Absent");
+        btnPresent.setBounds(100, 200, 200, 30);
+        btnPresent.setFont(new Font("Arial", Font.BOLD, 15));
+        
+        btnAbsent = new JButton("Submit");
+        btnAbsent.setBounds(100, 200, 200, 30);
+        btnAbsent.setFont(new Font("Arial", Font.BOLD, 15));
+        
+        btnSubmit = new JButton("Submit");
+        btnSubmit.setBounds(100, 200, 200, 30);
+        btnSubmit.setFont(new Font("Arial", Font.BOLD, 15));
+        
+        btnDelete = new JButton("Submit");
+        btnDelete.setBounds(100, 200, 200, 30);
+        btnDelete.setFont(new Font("Arial", Font.BOLD, 15));
+        
+
+    f.add(lblName);
+    f.add(lblAge);
+    f.add(lblStudentnum);
+    f.add(lblCourse);
+    f.add(txtfldName);
+    f.add(txtfldStudentnum);
+    f.add(txtfldCourse);
+    f.add(btnPresent);
+    f.add(btnAbsent);
+    f.add(btnSubmit);
+    f.add(btnDelete);
+
+    setVisible(true);
+    setResizable(false);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    setSize(500, 400);
+        
+
+    btnSubmit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String name = txtfldName.getText();
+                byte age = Byte.parseByte(txtfldAge.getText());
+                String studentnum = txtfldStudentnum.getText();
+                String course = txtfldCourse.getText();
+
+                System.out.println("Submitted student information: ");
+                System.out.println("Name: " + name);
+                System.out.println("Age: " + age);
+                System.out.println("Studentnum: " + studentnum);
+                System.out.println("Course: " + course);
+            }
+        })
+    }
+
+
         
         
+        
+        //james
+                
+        btnPresent = new JButton("Absent");
+        btnPresent.setBounds(100, 200, 200, 30);
+        btnPresent.setFont(new Font("Arial", Font.BOLD, 15));
+        
+        btnAbsent = new JButton("Submit");
+        btnAbsent.setBounds(100, 200, 200, 30);
+        btnAbsent.setFont(new Font("Arial", Font.BOLD, 15));
+        
+        btnSubmit = new JButton("Submit");
+        btnSubmit.setBounds(100, 200, 200, 30);
+        btnSubmit.setFont(new Font("Arial", Font.BOLD, 15));
+        
+        btnDelete = new JButton("Submit");
+        btnDelete.setBounds(100, 200, 200, 30);
+        btnDelete.setFont(new Font("Arial", Font.BOLD, 15));
+        
+
+    f.add(lblName);
+    f.add(lblAge);
+    f.add(lblStudentnum);
+    f.add(lblCourse);
+    f.add(txtfldName);
+    f.add(txtfldStudentnum);
+    f.add(txtfldCourse);
+    f.add(btnPresent);
+    f.add(btnAbsent);
+    f.add(btnSubmit);
+    f.add(btnDelete);
+
+    setVisible(true);
+    setResizable(false);
+    setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    setSize(500, 400);
+        
+
+    btnSubmit.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                String name = txtfldName.getText();
+                byte age = Byte.parseByte(txtfldAge.getText());
+                String studentnum = txtfldStudentnum.getText();
+                String course = txtfldCourse.getText();
+
+                System.out.println("Submitted student information: ");
+                System.out.println("Name: " + name);
+                System.out.println("Age: " + age);
+                System.out.println("Studentnum: " + studentnum);
+                System.out.println("Course: " + course);
+            }
+        })
+    }
+
+}
