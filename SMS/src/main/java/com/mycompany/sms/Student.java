@@ -58,7 +58,7 @@ public class Student extends JFrame {
         txtfldCourse.setBounds(120, 160, 150, 20);
         txtfldCourse.setFont(new Font("Arial", Font.PLAIN, 15));
 
-        btnSubmit = new JButton("Submit");
+         btnSubmit = new JButton("Submit");
         btnSubmit.setBounds(100, 200, 200, 30);
         btnSubmit.setFont(new Font("Arial", Font.BOLD, 15));
 
@@ -97,6 +97,6 @@ public class Student extends JFrame {
                 System.out.println("Course: " + course);
             }
         });
-    }
+     }
 }
  
