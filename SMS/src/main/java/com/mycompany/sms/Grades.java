@@ -25,58 +25,58 @@ public class  Grades{
     Grades (){
 
 
-        f.setSize(500,600);
+        f.setSize(500,500);
         f.setLayout(null);
         f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
         
         
         
     lblGrades = new JLabel("GRADES");
-    lblGrades.setBounds(100,1, 250, 150);
-    lblGrades.setFont(new Font("Castellar", Font.BOLD, 50)); 
+    lblGrades.setBounds(200 ,1, 250, 150);
+    lblGrades.setFont(new Font("Arial", Font.BOLD, 20)); 
           
     lblName = new JLabel("Name:");
-    lblName.setBounds(30,130, 200, 30);
-    lblName.setFont(new Font("Arial", Font.BOLD, 30)); 
+    lblName.setBounds(50, 160, 200, 20);
+    lblName.setFont(new Font("Arial", Font.BOLD, 15)); 
     
     lblSubject = new JLabel("Subject:");
-    lblSubject.setBounds(30,190, 200, 30);
-    lblSubject.setFont(new Font("Arial", Font.BOLD, 30)); 
+    lblSubject.setBounds(50, 190, 200, 20);
+    lblSubject.setFont(new Font("Arial", Font.BOLD, 15)); 
     
     lblMidterm = new JLabel("Midterm:");
-    lblMidterm.setBounds(30,230, 200, 30);
-    lblMidterm.setFont(new Font("Arial", Font.BOLD, 30)); 
+    lblMidterm.setBounds(50 ,220, 200, 20);
+    lblMidterm.setFont(new Font("Arial", Font.BOLD, 15)); 
    
     lblFinal = new JLabel("Finals:");
-    lblFinal.setBounds(30,270, 200, 30);
-    lblFinal.setFont(new Font("Arial", Font.BOLD, 30));
+    lblFinal.setBounds(50 ,250, 200, 20);
+    lblFinal.setFont(new Font("Arial", Font.BOLD, 15));
     
     
-    txtfldName.setBounds(190,130, 200,30);
-    txtfldName.setFont(new Font("Castellar", Font.BOLD, 15));
+    txtfldName.setBounds(150, 160, 200,20);
+    txtfldName.setFont(new Font("Arial", Font.BOLD, 15));
     
-    txtfldSubject.setBounds(190,190, 200,30);
-    txtfldSubject.setFont(new Font("Castellar", Font.BOLD, 15));
+    txtfldSubject.setBounds(150,190, 200,20);
+    txtfldSubject.setFont(new Font("Arial", Font.BOLD, 15));
     
-    txtfldMidterm.setBounds(190,230, 200,30);
-    txtfldMidterm.setFont(new Font("Castellar", Font.BOLD, 15));
+    txtfldMidterm.setBounds(150,220, 100,20);
+    txtfldMidterm.setFont(new Font("Arial", Font.BOLD, 15));
      
-    txtfldFinal.setBounds(190, 270, 200,30);
-    txtfldFinal.setFont(new Font("Castellar", Font.BOLD, 15));
+    txtfldFinal.setBounds(150, 250, 100,20);
+    txtfldFinal.setFont(new Font("Arial", Font.BOLD, 15));
     
     
     
     btnCompute = new JButton("Compute");
-    btnCompute.setBounds(30, 500, 130, 30);
-    btnCompute.setFont(new Font("Castellar", Font.BOLD, 15));
+    btnCompute.setBounds(30, 350, 130, 30);
+    btnCompute.setFont(new Font("Arial", Font.BOLD, 15));
     
     btnClear = new JButton("Clear");
-    btnClear.setBounds(200, 500, 90, 30);
-    btnClear.setFont(new Font("Castellar", Font.BOLD, 15));
+    btnClear.setBounds(200, 350, 90, 30);
+    btnClear.setFont(new Font("Arial", Font.BOLD, 15));
    
     btnBack = new JButton("Back");
-    btnBack.setBounds(350, 500, 100, 30);
-    btnBack.setFont(new Font("Castellar", Font.BOLD, 15));
+    btnBack.setBounds(350, 350, 100, 30);
+    btnBack.setFont(new Font("Arial", Font.BOLD, 15));
     
     
     
@@ -100,4 +100,4 @@ public class  Grades{
     f.setResizable(false);
     
     }
-    }
+}
