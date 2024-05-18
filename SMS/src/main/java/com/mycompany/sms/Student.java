@@ -21,7 +21,7 @@ public class Student extends JFrame {
         lblTitle = new JLabel("Student Manager");
         lblTitle.setBounds(150, 5, 200, 20);
         lblTitle.setFont(new Font("Bell MT", Font.BOLD, 20));
-        lblTitle.setHorizontalAlignment(SwingConstants.CENTER);
+       
 
         lblSurname = new JLabel("Surname");
         lblSurname.setBounds(20, 40, 100, 20);
