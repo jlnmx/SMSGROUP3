@@ -4,9 +4,8 @@ import java.awt.Font;
 import javax.swing.*;
 
 
-public class  Grades{
+public class  Grades extends JFrame{
    
-    private JFrame f = new JFrame("Grades");
     
     private JLabel lblGrades,lblSubject,lblName ,lblFinal,lblMidterm;
     
@@ -24,10 +23,10 @@ public class  Grades{
 
     Grades (){
 
-
-        f.setSize(500,500);
-        f.setLayout(null);
-        f.setDefaultCloseOperation(f.EXIT_ON_CLOSE);
+        setTitle("Grades");
+        setSize(500,500);
+        setLayout(null);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         
         
@@ -80,24 +79,24 @@ public class  Grades{
     
     
     
-    f.add(lblGrades);
-    f.add(lblName);
-    f.add(lblSubject);
-    f.add(lblMidterm);
-    f.add(lblFinal);
-    f.add(txtfldName);
-    f.add(txtfldSubject);
-    f.add(txtfldMidterm);
-    f.add(txtfldFinal);
-    f.add(btnCompute);
-    f.add(btnClear);
-    f.add(btnBack);
+    add(lblGrades);
+    add(lblName);
+    add(lblSubject);
+    add(lblMidterm);
+    add(lblFinal);
+    add(txtfldName);
+    add(txtfldSubject);
+    add(txtfldMidterm);
+    add(txtfldFinal);
+    add(btnCompute);
+    add(btnClear);
+    add(btnBack);
 
  
 
    
-    f.setVisible(true);
-    f.setResizable(false);
+    setVisible(true);
+    setResizable(false);
     
     }
-        }
+}
