@@ -6,12 +6,13 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class Student extends JFrame {
-    private JLabel lblSurname, lblFirstname, lblStudentnum, lblAge, lblCourse, lblTitle;
+    private JLabel lblSurname, lblFirstname, lblStudentnum, lblAge, lblCourse, lblYear, lblTitle;
     private JTextField txtfldSurname = new JTextField();
     private JTextField txtfldFirstname = new JTextField();
     private JTextField txtfldStudentnum = new JTextField();
     private JTextField txtfldAge = new JTextField();
     private JTextField txtfldCourse = new JTextField();
+    private JTextField txtfldYear = new JTextField();
     private JButton btnSubmit;
     
     public Student() {
@@ -43,6 +44,10 @@ public class Student extends JFrame {
         lblCourse.setBounds(20, 160, 100, 20);
         lblCourse.setFont(new Font("Arial", Font.BOLD, 15));
 
+        lblYear = new JLabel("Year");
+        lblYear.setBounds(20, 190, 100, 20);
+        lblYear.setFont(new Font("Arial", Font.BOLD, 15));
+
         txtfldSurname.setBounds(120, 40, 150, 20);
         txtfldSurname.setFont(new Font("Arial", Font.PLAIN, 15));
 
@@ -57,9 +62,12 @@ public class Student extends JFrame {
 
         txtfldCourse.setBounds(120, 160, 150, 20);
         txtfldCourse.setFont(new Font("Arial", Font.PLAIN, 15));
+        
+        txtfldYear.setBounds(120, 190, 150, 20);
+        txtfldYear.setFont(new Font("Arial", Font.PLAIN, 15));
 
-         btnSubmit = new JButton("Submit");
-        btnSubmit.setBounds(100, 200, 200, 30);
+        btnSubmit = new JButton("Submit");
+        btnSubmit.setBounds(100, 230, 200, 30);
         btnSubmit.setFont(new Font("Arial", Font.BOLD, 15));
 
         add(lblTitle);
@@ -68,11 +76,13 @@ public class Student extends JFrame {
         add(lblStudentnum);
         add(lblAge);
         add(lblCourse);
+        add(lblYear);
         add(txtfldSurname);
         add(txtfldFirstname);
         add(txtfldStudentnum);
         add(txtfldAge);
         add(txtfldCourse);
+        add(txtfldYear);
         add(btnSubmit);
 
         setVisible(true);

@@ -56,5 +56,4 @@ public class Attendance extends JFrame {
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
-
 }
