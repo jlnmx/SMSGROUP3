@@ -2,11 +2,14 @@ package com.mycompany.sms;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class Attendance extends JFrame {
+public class Attendance extends JFrame implements ActionListener{
     private JLabel lblStatus, lblReason, lblTitle;
     private JTextField txtfldReason; 
-    private JButton btnSubmit;
+    private JButton btnSubmit; 
+    private JButton btnBack;
     private JComboBox<String> cmbAttend;
     
     public Attendance() {
@@ -34,7 +37,14 @@ public class Attendance extends JFrame {
         btnSubmit = new JButton("Submit");
         btnSubmit.setBounds(350, 250, 100, 30);
         btnSubmit.setFont(new Font("Arial", Font.BOLD, 15));
-      
+        btnBack.addActionListener(this); 
+
+        
+        btnBack =  new JButton("Back");
+        btnBack.setBounds(350,250,100,30);
+        btnBack.setFont(new Font("Arial", Font.BOLD,15));
+        btnBack.addActionListener(this); 
+
      
         
         
@@ -50,10 +60,26 @@ public class Attendance extends JFrame {
         add(lblTitle);
         add(txtfldReason);
         add(btnSubmit);
+        add(btnBack);
         add(cmbAttend);
         
         setVisible(true);
         setResizable(false);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
+    
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        if (e.getSource() == btnBack) {
+            dispose();
+            Attendance at = new Attendance();
+            at.setVisible(true);
+            
+        } else if (e.getSource() == btnSubmit) {
+            dispose();
+            Attendance at = new Attendance();
+            at.setVisible(true);
+        }    
+    }        
+   
 }
