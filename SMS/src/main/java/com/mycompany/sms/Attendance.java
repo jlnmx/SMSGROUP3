@@ -40,46 +40,4 @@ public class Attendance extends JFrame implements ActionListener{
         btnBack.addActionListener(this); 
 
         
-        btnBack =  new JButton("Back");
-        btnBack.setBounds(350,250,100,30);
-        btnBack.setFont(new Font("Arial", Font.BOLD,15));
-        btnBack.addActionListener(this); 
-
-     
-        
-        
-        JPanel panel = new JPanel();
-        String[] items = {"Absent", "Present"};
-        cmbAttend = new JComboBox(items);
-        cmbAttend.setBounds(120, 100, 70, 20);
-        panel.add(cmbAttend);
-        
-        add(panel);
-        add(lblReason);
-        add(lblStatus);
-        add(lblTitle);
-        add(txtfldReason);
-        add(btnSubmit);
-        add(btnBack);
-        add(cmbAttend);
-        
-        setVisible(true);
-        setResizable(false);
-        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    }
     
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        if (e.getSource() == btnBack) {
-            dispose();
-            Attendance at = new Attendance();
-            at.setVisible(true);
-            
-        } else if (e.getSource() == btnSubmit) {
-            dispose();
-            Attendance at = new Attendance();
-            at.setVisible(true);
-        }    
-    }        
-   
-}
