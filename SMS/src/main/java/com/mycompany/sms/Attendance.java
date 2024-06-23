@@ -72,8 +72,8 @@ public class Attendance extends JFrame implements ActionListener{
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == btnBack) {
             dispose();
-            Attendance at = new Attendance();
-            at.setVisible(true);
+            Menu m = new Menu();
+            m.setVisible(true);
             
         } else if (e.getSource() == btnSubmit) {
             dispose();
