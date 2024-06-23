@@ -77,8 +77,8 @@ public class Attendance extends JFrame implements ActionListener{
             
         } else if (e.getSource() == btnSubmit) {
             dispose();
-            Attendance at = new Attendance();
-            at.setVisible(true);
+            Grades gr = new Grades();
+            gr.setVisible(true);
         }    
     }        
    
