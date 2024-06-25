@@ -122,9 +122,10 @@ public class Grades extends JFrame implements ActionListener {
         if (e.getSource() == btnBack) {
             dispose();
             Attendance at = new Attendance();
-            at.setVisible(true);
+            at.setVisible(true);  
+        } 
             
-        } else if (e.getSource() == btnClear) {
+        else if (e.getSource() == btnClear) {
             // Clear all text fields
             txtfldStudID.setText("");
             txtfldSurName.setText("");
@@ -132,9 +133,10 @@ public class Grades extends JFrame implements ActionListener {
             txtfldSubject.setText("");
             txtfldMidterm.setText("");
             txtfldFinal.setText("");
-            txtareaLoginResults.setText("");
+            txtareaLoginResults.setText("");    
+        } 
             
-        } else if (e.getSource() == btnResult) {
+        else if (e.getSource() == btnResult) {
             try {
                 String studentID = txtfldStudID.getText();
                 String surname = txtfldSurName.getText();
@@ -146,9 +148,11 @@ public class Grades extends JFrame implements ActionListener {
                 double average = (midterm + finals) / 2;
 
                 String remarks;
+                
                 if (average <= 3.0) {
                     remarks = "Passed";
                 } 
+                    
                 else {
                     remarks = "Failed";
                 }
