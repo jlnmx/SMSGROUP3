@@ -94,7 +94,7 @@ public class Grades extends JFrame implements ActionListener {
 
         txtareaLoginResults.setFont(new Font("Arial", Font.BOLD, 20));
         txtareaLoginResults.setBounds(20, 350, 600, 390);
-        
+        txtareaLoginResults.setEditable(false);
        
         
         add(lblStudID);
@@ -148,7 +148,8 @@ public class Grades extends JFrame implements ActionListener {
                 String remarks;
                 if (average <= 3.0) {
                     remarks = "Passed";
-                } else {
+                } 
+                else {
                     remarks = "Failed";
                 }
 
@@ -161,9 +162,8 @@ public class Grades extends JFrame implements ActionListener {
                                             + "\n\nAverage Grade: " + average 
                                             + "\nRemarks: " + remarks);
                 
-                
-
-            } catch (NumberFormatException ex) {
+                } 
+            catch (NumberFormatException ex) {
             }
         }
     }
